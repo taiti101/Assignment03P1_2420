@@ -88,6 +88,10 @@ sudo systemctl status generate-index.service
 ```
 **Note** There were some issues with this part, as seen on the picture, they are some parts that are working and some not. I attempted to try again, but i did not manage to fix it.
 
+----
+## Task 3
+
+
 
 
 
