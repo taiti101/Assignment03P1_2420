@@ -33,6 +33,7 @@ sudo chown -R webgen:webgen /var/lib/webgen
 sudo tree /var/lib/webgen
 ```
 - This is the picture (below) of what it suppose to look like.
+Screenshot 2024-11-24 165032.png
 ----
 ## Task 2
 
