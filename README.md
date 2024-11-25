@@ -33,7 +33,7 @@ sudo chown -R webgen:webgen /var/lib/webgen
 sudo tree /var/lib/webgen
 ```
 - This is the picture (below) of what it suppose to look like.
-
+----
 ## Task 2
 
 We will now create a service file for both generate-index.service and generate-index.timer
@@ -71,4 +71,23 @@ Persistent=true
 [Install]
 WantedBy=timer.target
 ```
+Since we finished creating the service file, we need to start and enable the services
+```
+sudo systemctl start generate-index.service
+sudo systemctl enable generate-index.service
+
+sudo systemctl start generate-index.timer
+sudo systemctl enable generate-index.timer
+```
+You can check your services status by typing:
+```
+sudo systemctl status generate-index.service
+```
+```
+sudo systemctl status generate-index.service
+```
+**Note** There were some issues with this part, as seen on the picture, they are some parts that are working and some not. I attempted to try again, but i did not manage to fix it.
+
+
+
 
