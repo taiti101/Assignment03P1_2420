@@ -3,7 +3,7 @@ server {
     listen [::]:80;
 
 
-    server_name 19.101.111.280
+    server_name _;
 
 
     root /var/lib/webgen/HTML;

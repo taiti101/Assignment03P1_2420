@@ -128,7 +128,7 @@ server {
     listen [::]:80;
 
 
-    server_name task3_webgen
+    server_name _;
 
 
     root /var/lib/webgen/HTML;
