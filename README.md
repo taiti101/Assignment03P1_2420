@@ -91,7 +91,76 @@ sudo systemctl status generate-index.service
 ----
 ## Task 3
 
+For this task, we will have to do install and configure nginx
+- To install nginx type, 
+```
+sudo pacman -S ngnix
+```
+- after that, create and edit the ngnix.config file
+
+Before you go ahead, make sure to create directories so you won't face any issues later on.
+```
+sudo mkdir /etc/nginx/sites-available
+```
+```
+sudo mkdir /etc/nginx/sites-enabled
+```
+----
+Create this,
+```
+sudo nvim /etc/nginx/nginx.conf
+```
+**Important** The only thing you need to edit in the ngnix.conf file is replace the #user http; (top left) with user webgen; pictures below for example,
+
+Before
+
+After
+----
+
+Now create a file for the server block file
+```
+sudo nvim /etc/nginx/sites-available/(However you name it, ex: task3_webgen)
+```
+Then add the code to the file 
+```
+server {
+    listen 80;
+    listen [::]:80;
 
 
+    server_name task3_webgen
+
+
+    root /var/lib/webgen/HTML;
+    index index.html;
+
+
+    	location / {
+	try_files $uri $uri/ =404
+    }
+}
+```
+Now that you're done, you can test it by typing,
+```
+sudo nginx -t
+```
+You can also type the command (below)
+```
+sudo systemctl daemon-reload
+```
+- This (code) so it can restart
+```
+sudo systemctl start nginx
+```
+```
+sudo systemctl enable nginx
+```
+- These two codes (above) can start and enable the ngnix service
+
+to check if ngnix works, type:
+```
+sudo systemctl status nginx
+```
+----
 
 
