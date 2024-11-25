@@ -114,9 +114,6 @@ sudo nvim /etc/nginx/nginx.conf
 ```
 **Important** The only thing you need to edit in the ngnix.conf file is replace the #user http; (top left) with user webgen; pictures below for example,
 
-Before
-
-After
 ----
 
 Now create a file for the server block file
