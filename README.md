@@ -1,5 +1,3 @@
-# Assignment03P1_2420
-
 # Assignment3 Part 1
 
 
@@ -89,6 +87,8 @@ sudo systemctl status generate-index.service
 sudo systemctl status generate-index.service
 ```
 **Note** There were some issues with this part, as seen on the picture, they are some parts that are working and some not. I attempted to try again, but i did not manage to fix it.
+
+![Screenshot 2024-11-24 212917](https://github.com/user-attachments/assets/881dec7a-afc6-4271-b6bc-116ca281c385)
 
 ----
 ## Task 3
@@ -190,6 +190,8 @@ You can also see the status of your ufw by typing,
 sudo ufw status
 ```
 ----
+![Screenshot 2024-11-24 195345](https://github.com/user-attachments/assets/d626e3ec-189c-4cfa-836a-97a28940b417)
+
 **NOTE** I ran into an issue while doing task 4, I was not sure what the issue was so I attempted to do it by,
 ```
 sudo pacman -Syu
