@@ -1,0 +1,18 @@
+server {
+    listen 80;
+    listen [::]:80;
+
+
+    server_name task3_webgen
+
+
+    root /var/lib/webgen/HTML;
+    index index.html;
+
+
+    	location / {
+	try_files $uri $uri/ =404
+    }
+}
+
+# References: Week 12 notes, https://gitlab.com/cit2420/2420-notes-f24/-/blob/main/2420-notes/week-twelve.md?ref_type=heads
