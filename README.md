@@ -162,5 +162,38 @@ to check if ngnix works, type:
 sudo systemctl status nginx
 ```
 ----
+## Task 4
 
+We are going to install ufw, to start, type:
+```
+sudo pacman -S ufw
+```
+For the SSH and HTTP, type:
+```
+sudo ufw allow ssh
+```
+```
+sudo ufw allow http
+```
+After that, we are going to set by limiting the SSH rate
+```
+sudo ufw limit ssh
+```
+To enable ufw, type:
+```
+sudo ufw enable
+```
+You can also see the status of your ufw by typing,
+```
+sudo ufw status
+```
+----
+**NOTE** I ran into an issue while doing task 4, I was not sure what the issue was so I attempted to do it by,
+```
+sudo pacman -Syu
+```
+```
+I then went to Digital Ocean to turn off and on
+```
+It did not work
 
